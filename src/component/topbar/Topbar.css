@@ -1,0 +1,85 @@
+@import "../../global.css";
+
+.topbar {
+  width: 100%;
+  height: 80px;
+  background-color: aliceblue;
+  /* background-color: #fff; */
+
+  /* border-bottom: #969696 2px solid; */
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar img {
+  margin-left: 200px;
+  width: 7%;
+}
+.topbar .list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.topbar .list .list_item span:hover {
+  background-color: var(--light_blue);
+  opacity: 0.5;
+  border-radius: 5px;
+  color: var(--orange);
+}
+.topbar .list .list_item {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.topbar .list .list_item a {
+  text-decoration: none;
+}
+.topbar .list .list_item img {
+  width: 13%;
+}
+.topbar .list .list_item span {
+  margin: 10px;
+  font-size: 30px;
+  color: #969696;
+  /* color: var(--dark_blue); */
+}
+#prog {
+  color: var(--dark_blue);
+  /* color: var(--orange); */
+}
+#prog:hover {
+  color: var(--orange);
+}
+/* 
+.topbar ul {
+  list-style-type: none;
+  margin-right: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.topbar ul img {
+  width: 10%;
+
+  margin-top: 90px;
+}
+.topbar li {
+  float: right;
+  margin: 40px;
+}
+.topbar li a {
+  font-size: 2em;
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topbar li a:hover {
+  background-color: #111;
+} */

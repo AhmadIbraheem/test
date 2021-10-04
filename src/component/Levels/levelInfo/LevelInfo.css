@@ -1,0 +1,13 @@
+@import "../../../global.css" .levelInfo {
+  background-color: blue;
+}
+.levelInfo .popupBox {
+  position: fixed;
+  background-color: var(--light_blue);
+  width: 30%;
+  height: 80;
+  top: 60%;
+  left: 37%;
+  z-index: 2;
+  border-radius: 20px;
+}

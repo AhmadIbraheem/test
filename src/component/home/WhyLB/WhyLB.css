@@ -1,0 +1,66 @@
+.whyLb {
+  background-color: aliceblue;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #001e6c;
+}
+.whyLb .top {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.whyLb .top p {
+  font-size: 20px;
+}
+.whyLb h2 {
+  color: #ffaa4c;
+}
+.whyLb .container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyLb .card {
+  width: 250px;
+  height: 70%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px -8px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  transition: all 1s ease;
+  text-align: center;
+  margin-right: 4%;
+}
+.whyLb .card:hover {
+  transform: scale(1.1);
+}
+
+.whyLb .second {
+  width: 250px;
+  height: 80%;
+}
+.whyLb .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whyLb .center {
+  border-radius: 10px;
+  background-color: rgb(250, 244, 345);
+}
+.whyLb .bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.whyLb h3 {
+  margin-bottom: 5px;
+}

@@ -1,0 +1,43 @@
+.levels2 .levels-wrapper {
+  position: relative;
+  padding-bottom: 10px;
+}
+.levels2 .levels-wrapper:last-child:before {
+  height: 0;
+}
+.levels2 .levels-wrapper:before {
+  content: "";
+  background: red;
+  width: 45px;
+  height: 100%;
+}
+.levels2 .level {
+  background: blueviolet;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+.levels2 .level span {
+  color: blue;
+  font-size: 10px;
+  font-weight: 10px;
+  display: block;
+  line-height: 75px;
+}
+.levels2 .level-info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+}
+.levels2 .level-info small {
+  color: red;
+  font-size: 10px;
+  font-weight: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}

@@ -1,0 +1,38 @@
+.downloadApp {
+  background-color: #5089c6;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.downloadApp h1 {
+  color: #ffaa4c;
+  font-size: 4em;
+}
+.downloadApp h3 {
+  font-size: 1.5em;
+}
+.carousal_contaier {
+  flex: 1;
+}
+.carousal_contaier img {
+  width: 40%;
+  margin-top: 10%;
+  margin-right: 40%;
+}
+.downloadApp .cont {
+  flex: 1;
+}
+.downloadApp .content {
+  margin-top: 30%;
+  margin-right: 0%;
+}
+.downloadApp .btn {
+  display: flex;
+  padding-top: 5px;
+}
+.downloadApp .download_button {
+  width: 100%;
+  height: 40px;
+}

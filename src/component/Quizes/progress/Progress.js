@@ -10,7 +10,7 @@ export default function Progress(props) {
             <div className="progressTop" dir="ltr">
 
                 <div className="progress"
-                    style={{ width: props.width }}></div>
+                    style={{ width: props.width + "%" }}></div>
                 {/* <div class="progress-bar">
                 <span class="bar">
                     <span class="progress"></span>

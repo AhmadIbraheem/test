@@ -1,0 +1,16 @@
+@import "../../../global.css";
+
+.resultComp * {
+  box-sizing: border-box;
+}
+.resultComp .popup-box {
+  position: fixed;
+  background-color: var(--light_blue);
+  /* background-color: white; */
+  width: 25%;
+  height: 90;
+  top: 40%;
+  left: 40%;
+  z-index: 100;
+  border-radius: 5px;
+}

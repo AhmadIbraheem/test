@@ -1,6 +1,20 @@
 import React from 'react';
 import './CorrectAnswer.css';
-export default function CorrectAnswer() {
+export default function CorrectAnswer(props) {
+    const handleNextQuestion = () => {
+        const nextQuestion = props.questionToRender + 1;
+        if (nextQuestion < props.maxProgress) {
+            props.setQuestionToRender(nextQuestion);
+            props.setIsTrue("");
+            const percentage = (nextQuestion * 100) / props.maxProgress;
+            props.setProgressValue(percentage);
+            alert(props.score);
+        }
+        else {
+            props.setDisplayResult("true"); 
+        }
+
+    }
     return (
 
         <div className="correctAnswer">
@@ -11,7 +25,8 @@ export default function CorrectAnswer() {
                 <h1>أحسنت !!</h1>
                 <p>هيا بنا نتعلم المزيد</p>
             </div>
-            <div className="continue">
+            <div className="continue"
+                onClick={handleNextQuestion}>
                 المتابعة
             </div>
         </div>

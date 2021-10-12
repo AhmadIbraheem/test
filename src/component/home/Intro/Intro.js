@@ -2,13 +2,18 @@ import React, { useEffect, useRef, useState } from 'react'
 import { init } from 'ityped';
 import './intro.css'
 import Login from '../../Logging/Login/Login';
+import Signup from '../../Logging/Signup/Signup';
 export default function Intro() {
 
     // declare stats
     // state to handlde login and sighnup
-    const [isOpen, setisOpen] = useState(false);
+    const [isLoginOpen, setIsLoginOpen] = useState(false);
+    const [isSignupOpen, setIsSignupOpen] = useState(false);
     const toggleLogin = () => {
-        setisOpen(!isOpen);
+        setIsLoginOpen(!isLoginOpen);
+    }
+    const toggleSignup = () => {
+        setIsSignupOpen(!isSignupOpen);
     }
     const textRef = useRef();
     useEffect(
@@ -32,7 +37,9 @@ export default function Intro() {
                     <h1>Languague <span>Best</span> </h1>
                     <h3>text <span ref={textRef} className="ityped-cursor"></span></h3>
                     <div className="btn">
-                        <div className="intro_button start">هيا نبدأ</div>
+                        <div className="intro_button start"
+                            onClick={toggleSignup}
+                        >هيا نبدأ</div>
                         <div className="intro_button"
                             onClick={toggleLogin}
                         >لدي حساب مسبقا</div>
@@ -43,7 +50,13 @@ export default function Intro() {
                     <img src="assets/icons8-expand-arrow-50.png" alt="" />
                 </a>
             </div>
-            {isOpen && <Login handleClose={toggleLogin} />}
+            {isLoginOpen && <Login handleClose={toggleLogin} 
+                setIsLoginOpen={setIsLoginOpen}
+                setIsSignupOpen={setIsSignupOpen}
+            />}
+            {isSignupOpen && <Signup handleClose={toggleSignup}
+            setIsLoginOpen={setIsLoginOpen}
+                setIsSignupOpen={setIsSignupOpen} />}
 
         </div>
     )

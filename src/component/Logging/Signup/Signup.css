@@ -1,5 +1,18 @@
+@import "../../../global.css";
+
 .signup * {
   box-sizing: border-box;
+}
+.signup .popup-box {
+  position: fixed;
+  background-color: #035397;
+  /* background-color: white; */
+  width: 25%;
+  height: 90;
+  top: 5%;
+  left: 40%;
+  z-index: 100;
+  border-radius: 5px;
 }
 .signup {
   background-color: #035397;
@@ -78,11 +91,24 @@
 }
 
 .signup .register input[type="submit"] {
-  background-image: linear-gradient(160deg, #ffaa4c 0%, #5089c6 100%);
+  /* background-image: linear-gradient(160deg, #ffaa4c 0%, #5089c6 100%); */
+  background-color: var(--orange);
+
   color: #fff;
-  margin-bottom: 6rem;
+  margin-bottom: 1rem;
   width: 100%;
 }
-.signup .register img {
-  width: 30%;
+  .signup .register .logo {
+    width: 30%;
+  }
+
+.signup .register .close {
+  position: fixed;
+  top: 30px;
+  right: 35%;
+
+  width: 4%;
+}
+.login .register .down {
+  margin-top: 0;
 }

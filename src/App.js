@@ -19,6 +19,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Question1 from './component/Quizes/questions/question1/Question1';
 import QuestionAudio from './component/Quizes/questions/questioAudio/QuestionAudio';
 import HomeMain from './component/home/HomeMain/HomeMain';
+import Signup from './component/Logging/Signup/Signup';
 function App() {
   return (
     <div className="App">
@@ -29,7 +30,7 @@ function App() {
         <Route path="/question1" component={Question1} />
         <Route path="/question2" component={QuestionAudio} />
         <Route path="/question3" component={QuizeQuestion} />
-
+        <Route path="/signup" component={Signup} />
 
       </Router>
 

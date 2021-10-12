@@ -4,14 +4,30 @@ import WrongAnswer from '../../wrongAnswer/WrongAnswer';
 import './QuestionAudio.css';
 export default function QuestionAudio(props) {
 
-    const [IsTrue, setIsTrue] = useState("");
-    const [IsFalse, setIsFalse] = useState("");
-    const handleTrueAnswer = () => {
-        setIsTrue("true");
+    // const [IsTrue, setIsTrue] = useState("");
+    // const [IsFalse, setIsFalse] = useState("");
+
+    //functions 
+    // function to hgandle answer 
+    const handleAnswer = (value) => {
+        // console.log(props.answer);
+        if (value == props.answer) {
+            props.setScore(props.score + 1);
+
+            props.setIsTrue("true");
+        } else
+            props.setIsFalse("true");
     }
-    const handleFalseAnswer = () => {
-        setIsFalse("true");
-    }
+
+  
+
+
+    // const handleTrueAnswer = () => {
+    //     setIsTrue("true");
+    // }
+    // const handleFalseAnswer = () => {
+    //     setIsFalse("true");
+    // }
     return (
         <div className="questionAudio">
             <div className="cont">
@@ -23,7 +39,7 @@ export default function QuestionAudio(props) {
                         {
                             props.choices.map(
                                 (value) => (
-                                    <div className="box" onClick={handleFalseAnswer}>
+                                    <div className="box" onClick={() => handleAnswer(value)}>
                                         {value}
                                     </div>
                                 )
@@ -56,12 +72,12 @@ export default function QuestionAudio(props) {
 
             </div>
 
-            <div className="result">
+            {/* <div className="result">
                 <div className="popup-box">
                     {IsTrue && <CorrectAnswer />}
                     {IsFalse && <WrongAnswer />}
                 </div>
-            </div>
+            </div> */}
 
         </div>
     )

@@ -1,7 +1,14 @@
 import React from 'react';
 import './WrongAnswer.css'
 
-export default function WrongAnswer() {
+export default function WrongAnswer(props) {
+    const handleNextQuestion = () => {
+
+        const num = props.questionToRender + 1;
+        props.setQuestionToRender(num);
+
+        props.setIsFalse("");
+    }
     return (
         <div className="wrongAnswer">
             <div className="img">
@@ -12,7 +19,8 @@ export default function WrongAnswer() {
                 <h4>الجواب الصحيح:</h4>
                 <p>هنا يظهر الجواب الصحيح</p>
             </div>
-            <div className="continue">
+            <div className="continue"
+                onClick={handleNextQuestion}>
                 المتابعة
             </div>
         </div>

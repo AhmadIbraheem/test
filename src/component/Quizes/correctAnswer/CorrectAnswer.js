@@ -8,10 +8,10 @@ export default function CorrectAnswer(props) {
             props.setIsTrue("");
             const percentage = (nextQuestion * 100) / props.maxProgress;
             props.setProgressValue(percentage);
-            alert(props.score);
+            // alert(props.score);
         }
         else {
-            props.setDisplayResult("true"); 
+            props.setDisplayResult("true");
         }
 
     }

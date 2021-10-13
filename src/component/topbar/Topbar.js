@@ -13,8 +13,10 @@ export default function Topbar() {
                         <span id="prog">التقدم</span>
                     </Link></div>
                 <div className="list_item">
-                    <img src="assets/shop.svg" alt="" />
-                    <span>المتجر</span>
+                    <Link to="/profile">
+                        <img src="assets/shop.svg" alt="" />
+                        <span>حسابي</span>
+                    </Link>
                 </div>
                 <div className="list_item">
                     <Link to="/">

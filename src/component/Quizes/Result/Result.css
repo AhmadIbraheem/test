@@ -5,12 +5,98 @@
 }
 .resultComp .popup-box {
   position: fixed;
+
   background-color: var(--light_blue);
   /* background-color: white; */
-  width: 25%;
-  height: 90;
-  top: 40%;
-  left: 40%;
+  width: 35%;
+  height: 60%;
+  top: 20%;
+  left: 30%;
   z-index: 100;
-  border-radius: 5px;
+  border-radius: 50px;
+}
+.resultComp .box-shadow-3d {
+  box-shadow: 2px 2px 0px var(--middle_blue), 3px 3px 0px var(--middle_blue),
+    4px 4px 0px var(--middle_blue), 5px 5px 0px var(--middle_blue),
+    6px 6px 0px var(--middle_blue), 7px 7px 0px var(--middle_blue);
+}
+.resultComp .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resultComp .content .imgContent {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 4%;
+}
+.resultComp .content .imgContent img {
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  width: 30%;
+  vertical-align: middle;
+}
+.resultComp .content p {
+  font-size: 30px;
+  /* padding: 1%; */
+  color: var(--grey);
+  /* background-color: var(--middle_blue);
+  border: 1px solid;
+  border-radius: 20px; */
+}
+.resultComp .content .scoreContent span {
+  padding-left: 0%;
+  font-size: 40px;
+  color: var(--orange);
+}
+.resultComp .content .breaker {
+  position: relative;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: -10px;
+  width: 70%;
+
+  height: 2px;
+  /* background-color: var(--orange); */
+  background-color: var(--dark_blue);
+  /* background-color: #fff; */
+}
+
+.resultComp .content .btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 6%;
+}
+.resultComp .content .btns .box-shadow-btn {
+  box-shadow: 1px 1px 0px var(--dark_blue), 2px 2px 0px var(--dark_blue),
+    4px 4px 0px var(--dark_blue);
+}
+.resultComp .content .btns .box-shadow-btn:hover {
+  box-shadow: 1px 1px 0px var(--dark_blue);
+}
+.resultComp .content .btns div {
+  width: 160px;
+  height: 50px;
+  border-radius: 10%;
+  cursor: pointer;
+
+  /* border: solid 2px var(--grey); */
+  border: solid 2px var(--dark_blue);
+  text-align: center;
+
+  line-height: 50px;
+  font-size: 20px;
+  /* color: var(--dark_blue); */
+  color: var(--grey);
+}
+
+.resultComp .content .btns div:hover {
+  background-color: var(--dark_blue);
+  color: var(--grey);
+}
+.resultComp .content .retry {
+  margin-right: 15%;
 }

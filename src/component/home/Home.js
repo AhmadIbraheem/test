@@ -41,6 +41,7 @@ function Home() {
             {/* {isHovering && <LevelInfo />} */}
             <div className="container">
                 <div className="left">
+                   
                     <div class="first_space">
                         <img src="assets/placeholder.svg" alt="" />
                         <h3>فتح قوائم المتصدرين!</h3>

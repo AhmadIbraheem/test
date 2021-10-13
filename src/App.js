@@ -20,6 +20,8 @@ import Question1 from './component/Quizes/questions/question1/Question1';
 import QuestionAudio from './component/Quizes/questions/questioAudio/QuestionAudio';
 import HomeMain from './component/home/HomeMain/HomeMain';
 import Signup from './component/Logging/Signup/Signup';
+import Result from './component/Quizes/Result/Result';
+import Profile from './component/Profile/Profile';
 function App() {
   return (
     <div className="App">
@@ -31,6 +33,10 @@ function App() {
         <Route path="/question2" component={QuestionAudio} />
         <Route path="/question3" component={QuizeQuestion} />
         <Route path="/signup" component={Signup} />
+        <Route path="/profile" component={Profile} />
+        {/* testing */}
+        <Route path="/result" component={Result} />
+        
 
       </Router>
 

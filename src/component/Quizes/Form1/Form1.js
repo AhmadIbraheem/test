@@ -143,6 +143,7 @@ export default function Form1() {
           <div className="btns">
             <div className="pass"
               onClick={hanldePass}>
+
               تخط  !!           </div>
             <div className="check"
               onClick={handleCheck}>
@@ -184,6 +185,6 @@ export default function Form1() {
       </div>
 
 
-    </div>
+    </div >
   )
 }

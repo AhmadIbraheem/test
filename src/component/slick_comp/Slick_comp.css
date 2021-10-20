@@ -7,6 +7,10 @@
   width: 400px;
   height: 300px;
   padding: 10px;
+  border: 0.1px solid grey;
+margin: 10%;
+text-align: center;
+
 }
 .slick_comp .item img {
   max-width: 100%;
@@ -15,4 +19,29 @@
 }
 .slick_comp .item {
   box-sizing: border-box;
+}
+@media(max-width: 728px){
+  .items{
+    margin: 20%;
+  }
+  .slick_comp .item {
+    border: 1px solid springgreen;
+    display: flex;
+    width: 100px;
+  }
+  /* .slick_comp .item {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    padding: 10px;
+    background-color: coral;
+    text-align: center;
+    border: 1px solid springgreen;
+    padding: 10%;
+  } 
+  .slick_comp .item img {
+    max-width: 200%;
+    max-height: 200%;
+    display: block;
+  } */
 }

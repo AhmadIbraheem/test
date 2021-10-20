@@ -1,4 +1,5 @@
 import React from 'react'
+import NavigationBar from '../../NavigationBar/NavigationBar'
 import Topbar from '../../topbar/Topbar'
 import Ads from '../Ads/Ads'
 import DownloadApp from '../DownloadApp/DownloadApp'
@@ -8,10 +9,11 @@ import WhyLB from '../WhyLB/WhyLB'
 export default function HomeMain() {
     return (
         <div>
-            <Topbar />
+            {/* <Topbar /> */}
+            <NavigationBar />
             <Intro />
             <WhyLB />
-            <Ads />
+            {/* <Ads /> */}
             <DownloadApp />
         </div>
     )

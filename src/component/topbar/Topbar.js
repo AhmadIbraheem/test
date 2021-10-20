@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 export default function Topbar() {
     return (
         <div className="topbar" dir="ltr">
-            <img className="logo"
-                src="assets/logolb.jpeg" alt="" />
+            <div className="websiteName">
+                <h1>Languague <span>Best</span></h1>
+            </div>
             <div className="list">
                 <div className="list_item">
                     <Link to="/levels">
@@ -24,6 +25,7 @@ export default function Topbar() {
                         <span>الرئيسية</span>
                     </Link>
                 </div>
+
             </div>
 
             {/* <ul>

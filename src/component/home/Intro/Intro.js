@@ -27,16 +27,25 @@ export default function Intro() {
     )
 
     return (
-        <div className="intro" dir="ltr">
+        <div className="intro" dir="ltr"
+            style={{ backgroundImage: "url(assets/BG2.png)" }}>
+            <div className="imgContainer">
 
-            <img className="intro_img"
-                src="assets/nerd-animate.svg" alt="" />
+                <img className="intro_img"
+                    src="assets/websiteImage.png" alt="" />
+            </div>
             <div className="right">
                 <div className="wrapper">
-                    <h2>Lorem ipsum </h2>
-                    <h1>Languague <span>Best</span> </h1>
-                    <h3>text <span ref={textRef} className="ityped-cursor"></span></h3>
+                    <div className="text">
+
+                        <h1>Languague <span>Best</span> </h1>
+                        <h4> !! أسهل و أمتع طريقة لتعلم لغة جديدة بدون عناء </h4>
+                        {/* <h3 id="h2Text"> !! أسهل و أمتع طريقة لتعلم لغة جديدة بدون عناء </h3> */}
+                        {/* <h3>text <span ref={textRef} className="ityped-cursor"></span></h3> */}
+                    </div>
+
                     <div className="btn">
+
                         <div className="intro_button start"
                             onClick={toggleSignup}
                         >هيا نبدأ</div>
@@ -44,18 +53,37 @@ export default function Intro() {
                             onClick={toggleLogin}
                         >لدي حساب مسبقا</div>
                     </div>
+                    {/* <div className="downloadBtns">
+                        <a href="">appstore</a>
+                        <a href="">goolge</a>
+                    </div> */}
+
+                    <div className="btns">
+                        {/* <h2> يمكنك تحميل التطبيق مباشرة من خلال الروابط</h2> */}
+                        <a href="#home">
+                            <img src="assets/app-store-badge.svg"
+                                className="downloadBtn"
+                                id="apple"
+                                alt="" />
+                        </a>
+                        <a href="#home">
+                            <img src="assets/google-play-badge.svg"
+                                className="download_button downloadBtn"
+                                alt="" />
+                        </a>
+                    </div>
                 </div>
-                <a href="#whyLb"
+                {/* <a href="#whyLb"
                     id="arrow">
                     <img src="assets/icons8-expand-arrow-50.png" alt="" />
-                </a>
+                </a> */}
             </div>
-            {isLoginOpen && <Login handleClose={toggleLogin} 
+            {isLoginOpen && <Login handleClose={toggleLogin}
                 setIsLoginOpen={setIsLoginOpen}
                 setIsSignupOpen={setIsSignupOpen}
             />}
             {isSignupOpen && <Signup handleClose={toggleSignup}
-            setIsLoginOpen={setIsLoginOpen}
+                setIsLoginOpen={setIsLoginOpen}
                 setIsSignupOpen={setIsSignupOpen} />}
 
         </div>

@@ -15,24 +15,30 @@ export default function Slick_comp() {
     }
     return (
         <div className="slick_comp">
-            <Slider {...settings}>
+            <Slider {...settings}
+            className="items">
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                    hello ads
                 </div>
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                hello ads
+                    {/* <img src="assets/aaa.jpg" alt="" /> */}
                 </div>
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                hello ads
+                    {/* <img src="assets/aaa.jpg" alt="" /> */}
                 </div>
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                hello ads
+                    {/* <img src="assets/aaa.jpg" alt="" /> */}
                 </div>
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                hello ads
+                    {/* <img src="assets/aaa.jpg" alt="" /> */}
                 </div>
                 <div className="item">
-                    <img src="assets/aaa.jpg" alt="" />
+                hello ads
+                    {/* <img src="assets/aaa.jpg" alt="" /> */}
                 </div>
             </Slider>
         </div>

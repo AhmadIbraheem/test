@@ -17,7 +17,7 @@ export default function Login(props) {
                             onClick={props.handleClose}
                             src="assets/close2.png" alt="" />
                         <img className="logo"
-                            src="assets/logolb.jpeg" alt="" />
+                            src="assets/websiteImage.png" alt="" />
 
                         <h1>تسجيل الدخول</h1>
 

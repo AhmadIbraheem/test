@@ -3,11 +3,16 @@ import './Profile.css'
 export default function Profile() {
     return (
         <div className="profile">
-            <div className="side"><div class="space">
-                <img src="assets/placeholder.svg" alt="" />
-                <h3> مساحات إعلانية</h3>
-            </div>
+            <div className="side"
+                id="oneSide">
                 <div class="space">
+                    <img src="assets/placeholder.svg" alt="" />
+                    <h3> مساحات إعلانية</h3>
+                </div>
+                <div class="space">
+                    <div id="banner-ad">
+
+                    </div>
                     <h3> مساحة إعلانية</h3>
                     <h5>  مساحة إعلانية مساحة إعلانية </h5>
                 </div>
@@ -84,7 +89,8 @@ export default function Profile() {
                 </div>
                 <div class="space">
                     <h3> مساحة لعرض معلومات خاصة بالموقع</h3>
-                </div></div>
+                </div>
+            </div>
 
         </div>
     )

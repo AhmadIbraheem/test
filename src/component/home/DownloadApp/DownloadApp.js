@@ -8,11 +8,12 @@ export default function DownloadApp() {
             </div>
             <div className="cont">
                 <div className="content">
-                    <h1>Language Best </h1>
+                    <h1>Language<span>Best</span></h1>
                     <h3>قم بتنزيل التطبيق اليوم وابدأ في تعلم اللغة لحياتك اليومية.</h3>
                     <div className="btn">
                         <a href="#home">
                             <img src="assets/app-store-badge.svg"
+                            id="apple"
                                 alt="" />
                         </a>
                         <a href="#home">

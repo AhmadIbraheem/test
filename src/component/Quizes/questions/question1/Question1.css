@@ -13,9 +13,9 @@
 .question1 .gridContainer {
   display: grid;
   grid-template-columns: auto auto;
-  margin-top: 0%;
-  margin-left: 10%;
-  margin-right: 20%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2%;
 }
 .question1 .gridItem {
@@ -41,4 +41,33 @@
 .question1 .gridItem img:hover {
   opacity: 0.2;
   z-index: 0;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .question1 .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 728px) {
+  .question1 .questionText {
+    font-size: 12px;
+  }
+  .question1 .gridContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+  .question1 .gridItem {
+    display: flex;
+    width: 280px;
+    height: 130px;
+    margin: 4px;
+  }
 }

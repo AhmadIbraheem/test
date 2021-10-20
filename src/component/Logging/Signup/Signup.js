@@ -4,7 +4,7 @@ export default function Signup(props) {
     const handleClick = () => {
         props.handleClose();
         props.setIsLoginOpen("true");
-        
+
 
     }
     return (
@@ -18,7 +18,7 @@ export default function Signup(props) {
                             onClick={props.handleClose}
                             src="assets/close2.png" alt="" />
                         <img className="logo"
-                            src="assets/logolb.jpeg" alt="" />
+                            src="assets/websiteImage.png" alt="" />
 
                         <h1>‏أنشئ حسابًا</h1>
 

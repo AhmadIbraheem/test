@@ -7,8 +7,8 @@
   flex: 1;
   margin-top: 4%;
 }
-.profile .side img{
-    width: 60%;
+.profile .side img {
+  width: 60%;
 }
 .profile .space {
   border: 2px solid #e5e5e5;
@@ -72,8 +72,8 @@
   /* margin-left: 15%; */
 }
 
-.profile .achievementsIcons h3{
-font-size: 25px;
+.profile .achievementsIcons h3 {
+  font-size: 25px;
 }
 .profile .levels {
   margin-top: 4%;
@@ -92,4 +92,82 @@ font-size: 25px;
   border: 2px solid var(--orange);
   border-radius: 50%;
   width: 90%;
+}
+
+@media (max-width: 728px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile .middle {
+    border-radius: 0px;
+    border-radius: 20px;
+    margin: 2%;
+    padding-bottom: 10%;
+  }
+
+  .profile .middle .header .profilePicture img {
+    border: 1px solid #e5e5e5;
+    border-radius: 100%;
+    width: 60%;
+    vertical-align: middle;
+
+    margin-top: -56%;
+  }
+  .profile .middle .header .profileTitle {
+    align-self: center;
+    font-size: 19px;
+    margin-top: 2%;
+    margin-bottom: 0px;
+  }
+  .profile .tries {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .profile .tries img {
+    padding: 4%;
+    width: 16%;
+    /* margin-left: 15%; */
+  }
+  .profile .tries h3 {
+    margin: 6%;
+    font-size: 15px;
+    /* margin-right: 15%; */
+  }
+  .profile .levels {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .profile .middle {
+    padding-bottom: 10%;
+  }
+  .profile .middle .header .profileTitle {
+    align-self: center;
+    font-size: 25px;
+  }
+  .profile .tries img {
+    padding: 4%;
+    width: 16%;
+    /* margin-left: 15%; */
+  }
+  .profile .tries h3 {
+    margin: 6%;
+    font-size: 19px;
+    /* margin-right: 15%; */
+  }
+  .profile .space {
+    text-align: center;
+    background-color: #d9e4f5;
+    color: var(--dark_blue);
+    margin: 10%;
+  }
+  .profile .space .levels {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }

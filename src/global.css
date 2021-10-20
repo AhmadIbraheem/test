@@ -10,3 +10,7 @@
   --red: #ff5252;
   --grey: #e5e5e5;
 }
+* {
+  font-weight: 700;
+  font-family: "Lemonada", cursive;
+}

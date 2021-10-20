@@ -10,7 +10,8 @@ export default function LevelDemo() {
     return (
         <div className="levelDemo" >
 
-            <div className="side">
+            <div className="side"
+                id="oneSide">
                 <div class="first_space">
                     <img src="assets/placeholder.svg" alt="" />
                     <h3>فتح قوائم المتصدرين!</h3>

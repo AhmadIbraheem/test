@@ -1,5 +1,5 @@
 @import "../../../global.css";
-.quizeQuestion .con {
+.quizeQuestion .cont {
   display: flex;
   flex-direction: row;
 }
@@ -60,4 +60,31 @@
 }
 .quizeQuestion .box:hover {
   background-color: var(--light_blue);
+}
+@media (max-width: 728px) {
+  .quizeQuestion .formContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    order: 0;
+  }
+  .quizeQuestion .left {
+    width: auto;
+    height: auto;
+  }
+  .quizeQuestion .left img {
+    width: 60%;
+  }
+  .quizeQuestion .right {
+    width: auto;
+  }
+  .quizeQuestion .box {
+    border-radius: 10px;
+
+    border: 1px solid #b2b1b9;
+    /* margin-left: 40%;
+    margin-right: 30%; */
+    text-align: center;
+    cursor: pointer;
+  }
 }

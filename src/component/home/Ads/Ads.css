@@ -1,3 +1,8 @@
 .ads {
   background-color: white;
 }
+/* @media(max-width: 728px){
+  .ads{
+    height: 100px;
+  }
+} */

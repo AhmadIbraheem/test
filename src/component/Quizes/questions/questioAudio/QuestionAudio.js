@@ -19,7 +19,7 @@ export default function QuestionAudio(props) {
             props.setIsFalse("true");
     }
 
-  
+
 
 
     // const handleTrueAnswer = () => {
@@ -33,8 +33,6 @@ export default function QuestionAudio(props) {
             <div className="cont">
                 <div className="formContainer">
                     <div className="right">
-
-
                         <h1>{props.questionText}</h1>
                         {
                             props.choices.map(
@@ -64,21 +62,9 @@ export default function QuestionAudio(props) {
                     <div className="left">
                         <img
                             src="assets/Headphone-orange.svg" alt="" />
-
                     </div>
                 </div> {/* end of formcontainer */}
-
-
-
             </div>
-
-            {/* <div className="result">
-                <div className="popup-box">
-                    {IsTrue && <CorrectAnswer />}
-                    {IsFalse && <WrongAnswer />}
-                </div>
-            </div> */}
-
         </div>
     )
 }

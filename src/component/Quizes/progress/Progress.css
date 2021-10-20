@@ -22,19 +22,35 @@
 @import "../../../global.css";
 .progressFather {
   display: flex;
+  flex-direction: column;
 }
+.progressFather .bar {
+  display: flex;
+}
+.progressFather .tries {
+  text-align: center;
+  color: var(--dark_blue);
+  font-weight: 700;
+  /* position: relative;
+  right: 8%;
+  margin-top: 2%;
+  top: 15%; */
+  margin-bottom: 0;
+}
+
 .progressFather .cancel {
   margin-top: 1%;
   margin-right: 10%;
 }
-.progressFather .cancel img {
+/* .progressFather .cancel img {
   margin-right: 100%;
   width: 200%;
-}
+} */
 .progressTop {
   margin: 10%;
   margin-top: 2.5%;
   margin-bottom: 0;
+
   width: 70%;
   height: 20px;
   border: solid var(--grey) 4px;
@@ -79,3 +95,24 @@
   top: 50%;
   transform: translate3d(-50%, -50%, 0);
 } */
+@media (max-width: 728px) {
+  .progressFather .cancel {
+    margin-right: 0;
+  }
+  .progressFather .progressTop {
+    margin-top: 8%;
+    margin-right: 2%;
+    margin-left: 0;
+  }
+  .progressFather .tries {
+    margin-bottom: 3%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .progressFather .progressTop {
+    margin-top: 4.5%;
+    margin-right: 6%;
+    margin-left: 0;
+  }
+}
